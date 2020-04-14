@@ -178,7 +178,7 @@ use finaldat , clear // contains the balanced panel of all African countries
 					recast(line) lwidth(*2) ciopts(recast(rline) lpattern(dash)) 
 
 		graph save threshold1 , replace
-		graph export "C:\data\tourism\threshold\threshold1.png", as(png) replace 
+		graph export "C:\threshold1.png", as(png) replace 
 		
 	coefplot `models2' , vertical  pstyle(p4) bycoefs byopts(xrescale) xlab(none) ///  
                     xlabel(`xlabel', add) title(`strx2')   /// 
@@ -187,5 +187,5 @@ use finaldat , clear // contains the balanced panel of all African countries
 					recast(line) lwidth(*2) ciopts(recast(rline) lpattern(dash)) 
 
 		graph save threshold2 , replace
-		graph export "C:\data\tourism\threshold\threshold2.png", as(png) replace
+		graph export "C:\threshold2.png", as(png) replace
 
